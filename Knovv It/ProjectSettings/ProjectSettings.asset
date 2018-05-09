@@ -634,9 +634,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 50c9d023-5e62-4956-b6f3-e0a3612e4347
-  projectName: Knovv It
-  organizationId: vanslim
+  cloudProjectId: 220b2efc-c64a-49a4-bc7e-7b076ca2bf26
+  projectName: -Knovv It-
+  organizationId: kimitomokato
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

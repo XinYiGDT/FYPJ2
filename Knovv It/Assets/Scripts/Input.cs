@@ -10,15 +10,15 @@ public class Input : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //// Disable keyboard input space.
-        //TouchScreenKeyboard.hideInput = false;
+        TouchScreenKeyboard.hideInput = true;
         //keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false);
         ////keyboard.active = true;
 
         //TouchScreenKeyboard keyboard;
         MainInput.shouldHideMobileInput = true;
-        TouchScreenKeyboard.hideInput = false;
-        if (keyboard == null || !TouchScreenKeyboard.visible)
-            keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false, "xyz");
+        //TouchScreenKeyboard.hideInput = false;
+        //if (keyboard == null || !TouchScreenKeyboard.visible)
+        //    keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false, "xyz");
     }
 	
 	// Update is called once per frame
