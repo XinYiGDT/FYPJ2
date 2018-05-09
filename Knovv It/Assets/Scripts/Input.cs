@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Input : MonoBehaviour {
 
     private TouchScreenKeyboard keyboard;
+    public InputField MainInput;
 	// Use this for initialization
 	void Start () {
         //// Disable keyboard input space.
@@ -14,6 +15,7 @@ public class Input : MonoBehaviour {
         ////keyboard.active = true;
 
         //TouchScreenKeyboard keyboard;
+        MainInput.shouldHideMobileInput = true;
         TouchScreenKeyboard.hideInput = false;
         if (keyboard == null || !TouchScreenKeyboard.visible)
             keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false, "xyz");
