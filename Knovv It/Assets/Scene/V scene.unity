@@ -227,12 +227,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 27562142}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -577,12 +577,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 146033753}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -699,12 +699,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 246457242}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1277,12 +1277,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 444402805}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1483,12 +1483,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 546555607}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1605,12 +1605,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 603242442}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1727,12 +1727,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 608731797}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1967,6 +1967,7 @@ RectTransform:
   - {fileID: 146033751}
   - {fileID: 1312064790}
   - {fileID: 1626685807}
+  - {fileID: 1240084026}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2156,12 +2157,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 754667372}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2278,12 +2279,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 760646887}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2803,7 +2804,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3158,12 +3159,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1037707134}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3285,7 +3286,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3402,12 +3403,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1136044046}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3452,6 +3453,128 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1136044043}
+--- !u!1 &1240084025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1240084026}
+  - component: {fileID: 1240084029}
+  - component: {fileID: 1240084028}
+  - component: {fileID: 1240084027}
+  m_Layer: 5
+  m_Name: Button_Delete
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1240084026
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240084025}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1479345457}
+  m_Father: {fileID: 676912943}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 155.4, y: -90.4}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1240084027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240084025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1240084028}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 986353109}
+        m_MethodName: DelelteFunction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: m
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1240084028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240084025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: bc33937d1f9cbba41a5fcb77dc389b7e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1240084029
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240084025}
 --- !u!1 &1292032972
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,7 +3663,7 @@ GameObject:
   - component: {fileID: 1312064792}
   - component: {fileID: 1312064791}
   m_Layer: 5
-  m_Name: Button (24)
+  m_Name: Button_N
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3600,12 +3723,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1312064792}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3874,12 +3997,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1382699604}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3958,7 +4081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -45.3, y: 25.5}
+  m_AnchoredPosition: {x: -43, y: 25.5}
   m_SizeDelta: {x: 40, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445817219
@@ -3996,12 +4119,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1445817220}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4118,12 +4241,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1456027613}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4168,6 +4291,82 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1456027610}
+--- !u!1 &1479345456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1479345457}
+  - component: {fileID: 1479345459}
+  - component: {fileID: 1479345458}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1479345457
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479345456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1240084026}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1479345458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479345456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '
+
+'
+--- !u!222 &1479345459
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479345456}
 --- !u!1 &1486642162
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,12 +4439,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1486642165}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4362,12 +4561,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1512371582}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4660,7 +4859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101, y: -90.399994}
+  m_AnchoredPosition: {x: 101.7, y: -90.399994}
   m_SizeDelta: {x: 40, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626685808
@@ -4698,12 +4897,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1626685809}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4820,12 +5019,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1632530602}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4942,12 +5141,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1674669214}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5064,12 +5263,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1726522838}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5610,12 +5809,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 1992454336}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5732,12 +5931,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 2003970191}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5854,12 +6053,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 919031806}
+  m_TargetGraphic: {fileID: 2107363056}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 986353109}
-        m_MethodName: alphabetFunction
+        m_MethodName: AlphabetFunction
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
