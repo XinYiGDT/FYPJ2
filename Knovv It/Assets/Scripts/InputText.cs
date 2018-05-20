@@ -42,6 +42,12 @@ public class InputText : MonoBehaviour {
 
     }
 
+    public void SendFunction()
+    {
+        
+
+    }
+
     static string UppercaseFirst(string s)
     {
         //check for empty string
