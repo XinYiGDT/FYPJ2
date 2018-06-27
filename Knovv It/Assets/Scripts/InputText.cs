@@ -10,7 +10,7 @@ public class InputText : MonoBehaviour {
     string Alpha = null;
     string Alpha2 = null;
     char[] nameLetter = new char[30];
-    public Text myInput = null;
+    public InputField myInput = null;
 
 	// Use this for initialization
 	public void AlphabetFunction (string Alphabet)
@@ -44,8 +44,7 @@ public class InputText : MonoBehaviour {
 
     public void SendFunction()
     {
-        
-
+        Word = ""; 
     }
 
     static string UppercaseFirst(string s)

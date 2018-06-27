@@ -54,4 +54,10 @@ public class Timer : MonoBehaviour {
             
         }
 	}
+
+    public void ResetTimer()
+    {
+        timeLeft = maxTime;
+        TimerBar.fillAmount = timeLeft;
+    }
 }

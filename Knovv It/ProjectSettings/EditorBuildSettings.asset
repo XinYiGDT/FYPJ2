@@ -5,6 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/JJ Playground.unity
     guid: a7ba250979473b44ab458d8a456486b4
+  - enabled: 1
+    path: Assets/Scene/Main Menu.unity
+    guid: 64db9cc25520c9a44a1a53484e1a7964
+  - enabled: 1
+    path: Assets/Scene/Gameplay.unity
+    guid: 61723e521e8eb3841b046dff171e2e76
