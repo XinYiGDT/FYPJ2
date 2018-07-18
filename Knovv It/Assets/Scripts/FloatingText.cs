@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class FloatingText : MonoBehaviour {
-    public Animator animator;
+    public Animation anim;
     private Text popText;
+   //float clipLength = animator.GetCurrentAnimatorStateInfo(0).length;
 
-	void OnEnable ()
+    public void OnEnable ()
     {
-        AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-        Destroy(gameObject, clipInfo[0].clip.length);
-        popText = animator.GetComponent<Text>();
+        anim.Play();
+        Destroy(gameObject, anim.clip.length);
+        SetText(GetComponent<Text>().text);
+        //popText = anim.GetComponent<Text>();
 	}
 	
 	public void SetText(string text)
