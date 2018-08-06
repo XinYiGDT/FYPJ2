@@ -20,6 +20,11 @@ public class AnswerVerifier : MonoBehaviour
     private string answerText;
 
     [SerializeField]
+    private GameObject text01;
+    [SerializeField]
+    private GameObject textMain;
+
+    [SerializeField]
     private Text questionText;
 
     [SerializeField]
@@ -49,6 +54,16 @@ public class AnswerVerifier : MonoBehaviour
         if (GameObject.Find("ScoreText").GetComponent<Text>())
         {
             scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
+        }
+
+        if (GameObject.Find("Text(1)").GetComponent<Text>())
+        {
+            text01 = GameObject.Find("Text(1)");
+        }
+
+        if (GameObject.Find("Text").GetComponent<Text>())
+        {
+            textMain = GameObject.Find("Text");
         }
     }
 
@@ -175,6 +190,8 @@ public class AnswerVerifier : MonoBehaviour
             CallRequest(answerText, EVENT_CATEGORY.SENDNRECEIVED_WORD);
             //End Timer all that blah blah.
             AddScore();
+           // text01.GetComponent<FloatingText>().enabled = true;
+            //textMain.enabled = false;
             gameTimer.ResetTimer();
         }
     }
