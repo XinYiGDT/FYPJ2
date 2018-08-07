@@ -11,8 +11,8 @@ public class PhotonRoomManager : MonoBehaviour {
     {
         if (createRoomInput.text.Length >= 1)
         {
-            PhotonNetwork.AuthValues = new AuthenticationValues(nameInput.text); 
-            PhotonNetwork.CreateRoom(createRoomInput.text, new RoomOptions() { MaxPlayers = 2 }, null);
+            PhotonNetwork.AuthValues = new AuthenticationValues(nameInput.text);
+            PhotonNetwork.CreateRoom(createRoomInput.text, new RoomOptions() { MaxPlayers = 2, PublishUserId = true }, null);
         }
     }
 
@@ -25,6 +25,30 @@ public class PhotonRoomManager : MonoBehaviour {
     private void OnJoinedRoom()
     {
         Debug.Log("Connected to the room");
-        PhotonNetwork.LoadLevel("Gameplay");
+
+        if (PhotonNetwork.playerList.Length == 2)
+        {
+            PhotonNetwork.LoadLevel("Gameplay");
+        }
+        else
+        {
+            Debug.Log("Not Enough PLayers");
+        }
+        
+    }
+
+    void OnPhotonPlayerConnected(PhotonPlayer newPlayer)
+    {
+        //Doesn't get called on the local player, just remote players, so you would still need something to handle on the second player
+        if (PhotonNetwork.playerList.Length == 2)
+        {
+            PhotonNetwork.room.SetWhoseTurn(newPlayer.UserId, false);
+            PhotonNetwork.LoadLevel("Gameplay");
+        }
+        else
+        {
+            Debug.Log("Not Enough PLayers");
+        }
+
     }
 }
