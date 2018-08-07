@@ -10,6 +10,7 @@ public class SoundClip : MonoBehaviour {
     // Use this for initialization
     void Start () {
         audioSource.clip = audioClip;
+        
     }
 
     public void playClip()
