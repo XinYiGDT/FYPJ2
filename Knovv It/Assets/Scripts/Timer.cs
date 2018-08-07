@@ -43,10 +43,11 @@ public class Timer : MonoBehaviour {
             {
                 timeUpDelay -= Time.deltaTime;
             }
-            else
-            { 
+            else if(timeUpDelay <=0)
+            {
                 timesUp.SetActive(true);
-                Time.timeScale = 0;
+                timeUpDelay = 0;
+                    
             }
             // ParticleSystem TimesUpInstance = Instantiate(timesUp,pos);
             //timesUp.Play();
@@ -54,6 +55,11 @@ public class Timer : MonoBehaviour {
             
         }
 	}
+
+    public float GetCurrentTime()
+    {
+        return timeLeft;
+    }
 
     public void ResetTimer()
     {

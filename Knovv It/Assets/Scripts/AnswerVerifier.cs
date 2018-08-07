@@ -56,14 +56,19 @@ public class AnswerVerifier : MonoBehaviour
             scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
         }
 
-        if (GameObject.Find("Text(1)").GetComponent<Text>())
+        if (GameObject.Find("Text (1)").GetComponent<Text>())
         {
-            text01 = GameObject.Find("Text(1)");
+            text01 = GameObject.Find("Text (1)");
         }
 
         if (GameObject.Find("Text").GetComponent<Text>())
         {
             textMain = GameObject.Find("Text");
+        }
+
+        if (GameObject.Find("Inner").GetComponent<Timer>())
+        {
+            gameTimer = GameObject.Find("Inner").GetComponent<Timer>();
         }
     }
 
@@ -190,8 +195,8 @@ public class AnswerVerifier : MonoBehaviour
             CallRequest(answerText, EVENT_CATEGORY.SENDNRECEIVED_WORD);
             //End Timer all that blah blah.
             AddScore();
-           // text01.GetComponent<FloatingText>().enabled = true;
-            //textMain.enabled = false;
+            text01.GetComponent<FloatingText>().enabled = true;
+            textMain.SetActive(false);
             gameTimer.ResetTimer();
         }
     }
