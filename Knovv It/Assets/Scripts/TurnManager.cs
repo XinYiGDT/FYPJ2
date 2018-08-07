@@ -67,23 +67,23 @@ public class TurnManager : PunBehaviour
     void SetupGUI()
     {
         // Set GUI
-        if (GameObject.Find("IGN").GetComponent<Text>())
-        {
-            playerIGNObj = GameObject.Find("IGN").GetComponent<Text>();
-            playerIGNObj.text = PhotonNetwork.player.UserId;
-        }
+        //if (GameObject.Find("IGN").GetComponent<Text>())
+        //{
+        //    playerIGNObj = GameObject.Find("IGN").GetComponent<Text>();
+        //    playerIGNObj.text = PhotonNetwork.player.UserId;
+        //}
 
-        if (GameObject.Find("EnemyIGN").GetComponent<Text>())
-        {
-            enemyIGNObj = GameObject.Find("EnemyIGN").GetComponent<Text>();
+        //if (GameObject.Find("EnemyIGN").GetComponent<Text>())
+        //{
+        //    enemyIGNObj = GameObject.Find("EnemyIGN").GetComponent<Text>();
 
-            for (int i = 0; i < playerList.Length; i++)
-            {
-                if (playerList[i].UserId != PhotonNetwork.player.UserId)
-                    enemyIGNObj.text = playerList[i].UserId;
-            }
+        //    for (int i = 0; i < playerList.Length; i++)
+        //    {
+        //        if (playerList[i].UserId != PhotonNetwork.player.UserId)
+        //            enemyIGNObj.text = playerList[i].UserId;
+        //    }
 
-        }
+        //}
 
         if (GameObject.Find("TurnIndicator").GetComponent<Text>())
         {
