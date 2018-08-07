@@ -56,12 +56,11 @@ public class TurnManager : PunBehaviour
     }
 
     public void SwitchTurn()
-    {
-        for (int i = 0; i < playerList.Length; i++)
-        {
-            if (PhotonNetwork.room.GetWhoseTurn() != playerList[i].UserId)
-                PhotonNetwork.room.SetWhoseTurn(playerList[i].UserId, true);
-        }
+    { 
+            if (PhotonNetwork.room.GetWhoseTurn() != playerList[0].UserId)
+                PhotonNetwork.room.SetWhoseTurn(playerList[0].UserId, true);
+            else
+                PhotonNetwork.room.SetWhoseTurn(playerList[1].UserId, true);
     }
 
     void SetupGUI()

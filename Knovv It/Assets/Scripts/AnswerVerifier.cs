@@ -149,9 +149,8 @@ public class AnswerVerifier : MonoBehaviour
         {
             Debug.Log(answer + " first letter is " + questionText.text + " last letter");
 
-            //TODO check is there such a word exist.
+
             CallRequest(answer, B_Check_Data);
-            //TODO check did the word appear before.
         }
         else
             Debug.Log(answer + " first letter is not same as " + questionText.text);
@@ -179,7 +178,7 @@ public class AnswerVerifier : MonoBehaviour
                 {
                     string RecvdMessage = content.ToString();
                     Debug.Log(RecvdMessage);
-                    //TODO IF ANSWER CORRECT DO ALL THE NESSCESSY STUFF
+
                     IsAnswerExist(RecvdMessage);
                 }
                 break;
@@ -191,11 +190,14 @@ public class AnswerVerifier : MonoBehaviour
                     Debug.Log(RecvdMessage);
                     Debug.Log(PhotonNetwork.player.UserId);
 
-                    if (subStrings[0] != PhotonNetwork.player.UserId)
+                    if (subStrings.Length == 2 && subStrings[0] != " ")
                     {
-                        Debug.Log("subStrings1 " + subStrings[0]);
-                        Debug.Log("subStrings2 " + subStrings[1]);
-                        BeginTurn(subStrings[1]);
+                        if (subStrings[0] != PhotonNetwork.player.UserId)
+                        {
+                            Debug.Log("subStrings1 " + subStrings[0]);
+                            Debug.Log("subStrings2 " + subStrings[1]);
+                            BeginTurn(subStrings[1]);
+                        }
                     }
                 }
                 break;
