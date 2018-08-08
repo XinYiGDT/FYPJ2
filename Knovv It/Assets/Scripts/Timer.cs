@@ -33,38 +33,50 @@ public class Timer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(timeLeft > 0)
+        if (PhotonNetwork.room.GetWhoseTurn() == PhotonNetwork.player.UserId)
         {
-            if (timeStartDelay > 0)
-            {
-                timeStartDelay -= Time.deltaTime;
-            }
-            else
-            {
-                timeStartDelay = 0;
-                //timeLeft -= Time.deltaTime;
-                if (PhotonNetwork.room.GetWhoseTurn() == PhotonNetwork.player.UserId)
-                    TimerBar.fillAmount = m_turnManager.RemainingSecondsInTurn / maxTime;
-            }
+            //if (m_turnManager.IsOver)
+            //    timesUp.SetActive(true);
+
+            TimerBar.fillAmount = m_turnManager.RemainingSecondsInTurn / maxTime;
+
         }
-        else
-        {
-            if (timeUpDelay > 0)
-            {
-                timeUpDelay -= Time.deltaTime;
-            }
-            else if(timeUpDelay <=0)
-            {
-                timesUp.SetActive(true);
-                timeUpDelay = 0;
-                    
-            }
-            // ParticleSystem TimesUpInstance = Instantiate(timesUp,pos);
-            //timesUp.Play();
-            //Destroy(TimesUpInstance, timeSpawn);
-            
-        }
-	}
+
+
+        //else
+        //    timesUp.SetActive(false);
+
+        //if (timeLeft > 0)
+        //{
+        //    if (timeStartDelay > 0)
+        //    {
+        //        timeStartDelay -= Time.deltaTime;
+        //    }
+        //    else
+        //    {
+        //        timeStartDelay = 0;
+        //        //timeLeft -= Time.deltaTime;
+
+        //    }
+        //}
+        //else
+        //{
+        //    if (timeUpDelay > 0)
+        //    {
+        //        timeUpDelay -= Time.deltaTime;
+        //    }
+        //    else if(timeUpDelay <=0)
+        //    {
+        //        timesUp.SetActive(true);
+        //        timeUpDelay = 0;
+
+        //    }
+        //    // ParticleSystem TimesUpInstance = Instantiate(timesUp,pos);
+        //    //timesUp.Play();
+        //    //Destroy(TimesUpInstance, timeSpawn);
+
+        //}
+    }
 
     public float GetCurrentTime()
     {
@@ -74,6 +86,7 @@ public class Timer : MonoBehaviour {
     public void ResetTimer()
     {
         //timeLeft = maxTime;
+        //timesUp.SetActive(false);
         TimerBar.fillAmount = maxTime;
     }
 }

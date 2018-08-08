@@ -9221,7 +9221,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 120341332
+  randomSeed: -1768997785
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14234,6 +14234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba56c4d2594d0941b17953ea9daa01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timesUpEffect: {fileID: 1062953702}
   turnDuration: 20
 --- !u!1 &948940517
 GameObject:
@@ -14652,7 +14653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &1062953703
 ParticleSystemRenderer:
   serializedVersion: 4
@@ -14781,7 +14782,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 290919878
+  randomSeed: -1756233063
   InitialModule:
     serializedVersion: 3
     enabled: 1

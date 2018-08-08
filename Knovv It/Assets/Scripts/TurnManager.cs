@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class TurnManager : PunBehaviour
 {
+    public GameObject timesUpEffect;
     public float turnDuration = 20f;
 
     PhotonPlayer[] playerList;
@@ -26,12 +27,22 @@ public class TurnManager : PunBehaviour
         if (IsMyTurn)
         {
             if (this.IsOver)
+            {
+                if (!timesUpEffect.GetActive())
+                    timesUpEffect.SetActive(true);
+                else
+                    timesUpEffect.GetComponent<ParticleSystem>().Play();
                 SwitchTurn();
+            }
 
-            timeLeftObj.text = RemainingSecondsInTurn.ToString();
+            timeLeftObj.text = RemainingSecondsInTurn.ToString("F2");
         }
 
-        turnObj.text = PhotonNetwork.room.GetWhoseTurn() + " Turn";
+        if (PhotonNetwork.room.GetWhoseTurn() == PhotonNetwork.player.UserId)
+            turnObj.text = "Your Turn";
+        else
+            turnObj.text = "Your Opponent Turn";
+
     }
 
     public bool IsMyTurn
@@ -56,7 +67,7 @@ public class TurnManager : PunBehaviour
     }
 
     public void SwitchTurn()
-    { 
+    {
             if (PhotonNetwork.room.GetWhoseTurn() != playerList[0].UserId)
                 PhotonNetwork.room.SetWhoseTurn(playerList[0].UserId, true);
             else
