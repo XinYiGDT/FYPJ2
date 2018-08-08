@@ -77,7 +77,18 @@ public class AnswerVerifier : MonoBehaviour
 
     private void Update()
     {
-
+        if (m_turnManager.GameOver)
+        {
+            Debug.Log("Is GameOver = " + m_turnManager.GameOver);
+            if (Results() == PhotonNetwork.player.UserId)
+            {
+                PhotonNetwork.LoadLevel("Win");
+            }
+            else
+            {
+               PhotonNetwork.LoadLevel("Lose");
+            }
+        }
     }
 
     private void OnEnable()
@@ -222,10 +233,10 @@ public class AnswerVerifier : MonoBehaviour
     {
         if (returnMsg == "success")
         {
-            CallRequest(answerText, B_Send_Word);
-
             text01.GetComponent<FloatingText>().enabled = true;
             textMain.SetActive(false);
+
+            CallRequest(answerText, B_Send_Word);
             EndTurn();
         }
     }
@@ -234,5 +245,32 @@ public class AnswerVerifier : MonoBehaviour
     {
         score += (100 * answerText.Length);
         scoreText.text = "Score: " + score.ToString();
+
+        ExitGames.Client.Photon.Hashtable scoreProps = new ExitGames.Client.Photon.Hashtable();
+        scoreProps[PhotonNetwork.player.UserId] = score;
+
+        PhotonNetwork.room.SetCustomProperties(scoreProps);
+    }
+
+    public string Results()
+    {
+        if (PhotonNetwork.room == null || PhotonNetwork.room.CustomProperties == null || !PhotonNetwork.room.CustomProperties.ContainsKey(m_turnManager.playerList[0].UserId) || !PhotonNetwork.room.CustomProperties.ContainsKey(m_turnManager.playerList[1].UserId))
+        {
+            return "ERROR";
+        }
+
+        int resultA = (int)PhotonNetwork.room.CustomProperties[m_turnManager.playerList[0].UserId];
+        int resultB = (int)PhotonNetwork.room.CustomProperties[m_turnManager.playerList[1].UserId];
+
+        if (resultA < resultB)
+        {
+            return m_turnManager.playerList[0].UserId;
+        }
+        else if (resultB > resultA)
+        {
+            return m_turnManager.playerList[1].UserId;
+        }
+
+        return "DRAW";
     }
 }

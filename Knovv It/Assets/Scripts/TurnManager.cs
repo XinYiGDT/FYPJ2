@@ -7,12 +7,13 @@ public class TurnManager : PunBehaviour
 {
     public GameObject timesUpEffect;
     public float turnDuration = 20f;
+    public float maxRoundDuration = 180f;
 
-    PhotonPlayer[] playerList;
+    public PhotonPlayer[] playerList;
 
     // GUI
     Text playerIGNObj;
-    Text enemyIGNObj;
+    Text roundTimerObj;
     Text turnObj;
     Text timeLeftObj;
 
@@ -32,6 +33,7 @@ public class TurnManager : PunBehaviour
                     timesUpEffect.SetActive(true);
                 else
                     timesUpEffect.GetComponent<ParticleSystem>().Play();
+
                 SwitchTurn();
             }
 
@@ -42,6 +44,8 @@ public class TurnManager : PunBehaviour
             turnObj.text = "Your Turn";
         else
             turnObj.text = "Your Opponent Turn";
+
+        roundTimerObj.text = "Ending In: " + RemainingTimeInRound.ToString("F2");
 
     }
 
@@ -55,15 +59,29 @@ public class TurnManager : PunBehaviour
         get { return ((float)(PhotonNetwork.ServerTimestamp - PhotonNetwork.room.GetTurnStartTime())) / 1000.0f; }
     }
 
+    public float TotalElapsedTime
+    {
+        get { return ((float)(PhotonNetwork.ServerTimestamp - PhotonNetwork.room.GetStartTime())) / 1000.0f; }
+    }
+
     public float RemainingSecondsInTurn
     {
-
         get { return Mathf.Max(0f, this.turnDuration - this.ElapsedTimeInTurn); }
+    }
+
+    public float RemainingTimeInRound
+    {
+        get { return Mathf.Max(0f, this.maxRoundDuration - this.TotalElapsedTime); }
     }
 
     public bool IsOver
     {
         get { return this.RemainingSecondsInTurn <= 0f; }
+    }
+
+    public bool GameOver
+    {
+        get { return this.RemainingTimeInRound <= 0f; }
     }
 
     public void SwitchTurn()
@@ -95,6 +113,11 @@ public class TurnManager : PunBehaviour
 
         //}
 
+        if (GameObject.Find("RoundTimer").GetComponent<Text>())
+        {
+            roundTimerObj = GameObject.Find("RoundTimer").GetComponent<Text>();
+        }
+
         if (GameObject.Find("TurnIndicator").GetComponent<Text>())
         {
             turnObj = GameObject.Find("TurnIndicator").GetComponent<Text>();
@@ -117,6 +140,7 @@ public static class TurnStatics
 {
     public static readonly string TurnPropKey = "WhoseTurn";
     public static readonly string TurnStartPropKey = "TimeStart";
+    public static readonly string TotalTimeStartPropKey = "TotalTime";
 
     public static void SetWhoseTurn(this Room room, string turn, bool setStartTime = false)
     {
@@ -153,5 +177,15 @@ public static class TurnStatics
         }
 
         return (int)room.CustomProperties[TurnStartPropKey];
+    }
+
+    public static int GetStartTime(this RoomInfo room)
+    {
+        if (room == null || room.CustomProperties == null || !room.CustomProperties.ContainsKey(TotalTimeStartPropKey))
+        {
+            return 0;
+        }
+
+        return (int)room.CustomProperties[TotalTimeStartPropKey];
     }
 }

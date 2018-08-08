@@ -43,6 +43,11 @@ public class PhotonRoomManager : MonoBehaviour {
         if (PhotonNetwork.playerList.Length == 2)
         {
             PhotonNetwork.room.SetWhoseTurn(newPlayer.UserId, false);
+
+            ExitGames.Client.Photon.Hashtable timeProps = new ExitGames.Client.Photon.Hashtable();
+            timeProps["TotalTime"] = PhotonNetwork.ServerTimestamp;
+            PhotonNetwork.room.SetCustomProperties(timeProps);
+
             PhotonNetwork.LoadLevel("Gameplay");
         }
         else
