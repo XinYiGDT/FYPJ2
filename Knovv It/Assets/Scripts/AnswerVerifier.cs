@@ -77,16 +77,18 @@ public class AnswerVerifier : MonoBehaviour
 
     private void Update()
     {
-        if (m_turnManager.GameOver)
+        if (m_turnManager.GameOver && score != 0)
         {
             Debug.Log("Is GameOver = " + m_turnManager.GameOver);
             if (Results() == PhotonNetwork.player.UserId)
             {
+                Debug.Log("WIN");
                 PhotonNetwork.LoadLevel("Win");
             }
             else
             {
-               PhotonNetwork.LoadLevel("Lose");
+                Debug.Log("LOSE");
+                PhotonNetwork.LoadLevel("Lose");
             }
         }
     }

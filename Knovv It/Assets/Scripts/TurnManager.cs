@@ -7,7 +7,7 @@ public class TurnManager : PunBehaviour
 {
     public GameObject timesUpEffect;
     public float turnDuration = 20f;
-    public float maxRoundDuration = 180f;
+    public float maxRoundDuration = 60f;
 
     public PhotonPlayer[] playerList;
 

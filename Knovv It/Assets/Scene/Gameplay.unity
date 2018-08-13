@@ -21792,7 +21792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Ending In: 180'
+  m_Text: 'Ending In: 60'
 --- !u!222 &1645510168
 CanvasRenderer:
   m_ObjectHideFlags: 0

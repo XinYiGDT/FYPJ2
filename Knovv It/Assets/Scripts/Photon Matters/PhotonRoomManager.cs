@@ -42,12 +42,11 @@ public class PhotonRoomManager : MonoBehaviour {
         //Doesn't get called on the local player, just remote players, so you would still need something to handle on the second player
         if (PhotonNetwork.playerList.Length == 2)
         {
-            PhotonNetwork.room.SetWhoseTurn(newPlayer.UserId, false);
-
             ExitGames.Client.Photon.Hashtable timeProps = new ExitGames.Client.Photon.Hashtable();
             timeProps["TotalTime"] = PhotonNetwork.ServerTimestamp;
             PhotonNetwork.room.SetCustomProperties(timeProps);
 
+            PhotonNetwork.room.SetWhoseTurn(newPlayer.UserId, false);
             PhotonNetwork.LoadLevel("Gameplay");
         }
         else
